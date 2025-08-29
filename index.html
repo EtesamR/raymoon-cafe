@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>کافه رایمون</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/logo.png">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="left-info">
+        <div class="site-title">کافه رایمون</div>
+        <div class="phone-number">۰۹۳۷۷۸۷۵۷۰۰</div>
+      </div>
+      <a href="https://instagram.com/cafe_raymon__?igh=MWsazWcxNzd3anVxeq=="_blank" class="instagram-link"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" style="width:20px;height:20px;vertical-align:middle;"> اینستاگرام</a>
+    </div>
+  </header>
+
+  <nav>
+    <button class="active" data-target="menu">منو</button>
+    <button data-target="gallery">گالری عکس</button>
+    <button data-target="address">آدرس</button>
+  </nav>
+
+  <main>
+    <section id="intro" class="active">
+      <h2>به کافه ما خوش آمدید!</h2>
+      <p>کافه‌رستوران رایمون جاییه که می‌تونید لحظه‌هاتون رو با طعمی واقعی و فضایی دنج پر کنید...</p>
+      <div class="intro-gallery">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=400&q=80" alt="قهوه اسپرسو" />
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=400&q=80" alt="کیک شکلاتی" />
+        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=400&q=80" alt="کاپوچینو" />
+      </div>
+      <button id="enterBtn">ورود به سایت</button>
+    </section>
+
+    <section id="menu">
+      <!-- دکمه‌های اصلی -->
+      <div class="menu-categories">
+        <button class="main-btn" data-parent="drink"><img src="icon/cafe.png"/> نوشیدنی</button>
+        <button class="main-btn" data-parent="food"><img src="icon/berger.png"/> غذا</button>
+      </div>
+
+      <!-- زیرشاخه نوشیدنی -->
+      <div class="sub-menu" data-parent="drink">
+        <div class="menu-item" data-category="juice"><img src="icon/moktel.png"/><p class="title">آبمیوه‌های طبیعی</p></div>
+        <div class="menu-item" data-category="hot-drinks"><img src="icon/ghahve.png"/><p class="title">نوشیدنی گرم</p></div>
+        <div class="menu-item" data-category="shakes"><img src="icon/shake.png"/><p class="title">شیک‌ها</p></div>
+      </div>
+
+      <!-- زیرشاخه غذا -->
+      <div class="sub-menu" data-parent="food">
+        <div class="menu-item" data-category="foreign">
+          <img src="icon/berger.png" alt="غذاهای فرنگی" />
+          <p class="title">غذاهای فرنگی</p>
+        </div>
+        <div class="menu-item" data-category="iranian">
+          <img src="icon/sandvich.png" alt="غذاهای ایرانی" />
+          <p class="title">غذاهای ایرانی</p>
+        </div>
+        <div class="menu-item" data-category="pasta">
+          <img src="icon/pasta.png" alt="پاستا" />
+          <p class="title">پاستا</p>
+        </div>
+        <div class="menu-item" data-category="dessert">
+          <img src="icon/kake.png" alt="دسر و کیک‌ها" />
+          <p class="title">دسر و کیک‌ها</p>
+        </div>
+      </div>
+
+
+      <!-- منوهای واقعی -->
+      <div class="menu-content" data-category="juice">
+        <h3>🍹 آبمیوه‌های طبیعی</h3>
+        <ul class="menu-list">
+          <li><span>اب طالبی</span><span>۶۰,۰۰۰</span></li>
+          <li><span>اب هویچ</span><span>۶۰,۰۰۰</span></li>
+          <li><span>آب پرتقال</span><span>۵۵,۰۰۰</span></li>
+          <li><span>شیر موز</span><span>۴۵,۰۰۰</span></li>
+        </ul>
+      </div>
+
+      <div class="menu-content" data-category="hot-drinks">
+        <h3>☕ نوشیدنی‌های گرم</h3>
+        <ul class="menu-list">
+          <li><span>اسپرسو</span><span>۴۵,۰۰۰</span></li>
+          <li><span>کاپوچینو</span><span>۵۰,۰۰۰</span></li>
+          <li><span>هات‌ چاکلت</span><span>۵۵,۰۰۰</span></li>
+          <li><span>نسکافه</span><span>۵۵,۰۰۰</span></li>
+          <li><span>چای</span><span>۵۵,۰۰۰</span></li>
+          <li><span>دمنوش</span><span>۵۵,۰۰۰</span></li>
+        </ul>
+      </div>
+
+      <div class="menu-content" data-category="shakes">
+        <h3>🥤 شیک‌ها</h3>
+        <ul class="menu-list">
+          <li><span>شیک شکلات</span><span>۷۰,۰۰۰</span></li>
+          <li><span>شیک توت فرنگی</span><span>۶۵,۰۰۰</span></li>
+          <li><span>شیک موز</span><span>۶۵,۰۰۰</span></li>
+        </ul>
+      </div>
+
+      <div class="menu-content" data-category="foreign">
+        <h3>🍔 غذاهای فرنگی</h3>
+        <ul class="menu-list">
+          <li><span>پیتزا پپرونی</span><span>۱۲۰,۰۰۰</span></li>
+          <li><span>پیتزا سیر و استیک</span><span>۱۲۰,۰۰۰</span></li>
+          <li><span>پیتزا مرغ و قارچ</span><span>۱۳۰,۰۰۰</span></li>
+          <li><span>پیتزا گوشت و قارچ</span><span>۱۳۰,۰۰۰</span></li>
+          <li><span>پیتزا مخلوط</span><span>۱۳۰,۰۰۰</span></li>
+          <li><span>سیب زمینی تنوری</span><span>۱۳۰,۰۰۰</span></li>
+          <li><span>برگر</span><span>۱۳۰,۰۰۰</span></li>
+        </ul>
+      </div>
+
+      <div class="menu-content" data-category="iranian">
+        <h3>🍲 غذاهای ایرانی</h3>
+        <ul class="menu-list">
+          <li><span>چلو کوبیده</span><span>۱۵۰,۰۰۰</span></li>
+          <li><span>چلو جوجه</span><span>۱۴۰,۰۰۰</span></li>
+          <li><span>کاسه کباب</span><span>۱۳۰,۰۰۰</span></li>
+          <li><span>کباب برگ</span><span>۱۵۰,۰۰۰</span></li>
+          <li><span>بختیاری</span><span>۱۳۵,۰۰۰</span></li>
+          <li><span>چلو کوبیده نگین دار</span><span>۱۶۰,۰۰۰</span></li>
+          <li><span>ماهی</span><span>۱۶۰,۰۰۰</span></li>
+          <li><span>چنجه</span><span>۱۶۰,۰۰۰</span></li>
+        </ul>
+      </div>
+
+      <div class="menu-content" data-category="pasta">
+        <h3>🍝 پاستا</h3>
+        <ul class="menu-list">
+          <li><span>پاستا الفردو</span><span>۱۵۰,۰۰۰</span></li>
+        </ul>
+      </div>
+
+      <div class="menu-content" data-category="dessert">
+        <h3>🍰 دسر و کیک‌ها</h3>
+        <ul class="menu-list">
+          <!-- <li><span>کیک شکلاتی</span><span>۶۵,۰۰۰</span></li>
+          <li><span>چیزکیک</span><span>۷۰,۰۰۰</span></li> -->
+        </ul>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <h2>گالری عکس</h2>
+      <br>
+      <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=400&q=80" />
+        <img src="https://images.unsplash.com/photo-1468071174046-657d9d351a40?auto=format&fit=crop&w=400&q=80" />
+        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=400&q=80" />
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=400&q=80" alt="کیک شکلاتی" />
+      </div>
+    </section>
+
+    <section id="address">
+      <h2>آدرس ما</h2>
+      <p class="address">کیلومتر ۸ جاده اشتهار به بوءین زهر<br/><br/>تلفن: ۰۹۳۷۷۸۷۵۷۰۰<br/><br/>ساعات کاری: ۸ صبح تا ۱ شب</p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
